@@ -1,6 +1,6 @@
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/TnBz9vvr"))()
-local Window = Library.CreateLib("Note_e HUB", "DarkTheme")
+local Window = Library.CreateLib("Popzxcl-Note_e HUB", "DarkTheme")
 
 
 local Tab = Window:NewTab("ขุดแผนที่ 1")
