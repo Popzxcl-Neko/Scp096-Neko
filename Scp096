@@ -5,7 +5,7 @@ local Window = Library.CreateLib("Poozxcl-Note_e HUB", "DarkTheme")
 local Tab = Window:NewTab("สถานที่พ่อค้า")
 local Section = Tab:NewSection("Section Name")
 
-Section:NewToggle("ToggleText", "ToggleInfo", function(op)
+Section:NewToggle("อาหารอินฟินิตี้ห้ามมีโดนัท", "ToggleInfo", function(op)
 
 _G.te = op;
 while _G.te do wait()
@@ -16,6 +16,15 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Backpack"):FireServer(unpack(args))
+
+end
+end)
+Section:NewToggle("ขุดไม่มีวันหยุด", "ToggleInfo", function(op)
+
+_G.te = op;
+while _G.te do wait()
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ToolAction"):FireServer()
 
 end
 end)
